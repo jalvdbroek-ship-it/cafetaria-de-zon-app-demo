@@ -32,12 +32,6 @@ export function sundial(now, hours, { intro = true } = {}) {
             <g class="sun-wob">${cast("zon-cool", -52, -54, 104, 112)}</g>
           </g>
         </g>
-        <g clip-path="url(#sky)" class="dial-cast ${intro ? "intro" : ""}">
-          <g class="cs" style="--i:0"><g class="hop" style="--d:0s;--t:2.7s">${cast("frietje-happy", 52, 121, 80, 86)}</g></g>
-          <g class="cs" style="--i:1"><g class="hop" style="--d:0.5s;--t:3.1s">${cast("burg-cool", 126, 111, 90, 97)}</g></g>
-          <g class="cs" style="--i:2"><g class="hop" style="--d:1.1s;--t:2.9s">${cast("snack-wink", 218, 121, 80, 86)}</g></g>
-          <g class="cs" style="--i:3"><g class="hop" style="--d:1.7s;--t:3.3s">${cast("ijsje-happy", 292, 124, 76, 82)}</g></g>
-        </g>
         <g clip-path="url(#sky)" class="cs-sleep">${cast("zon-sleep", 148, 124, 104, 112)}</g>
       </svg>
       <div class="dial-text">
