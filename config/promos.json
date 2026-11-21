@@ -1,0 +1,14 @@
+[
+  {
+    "id": "spaar-start", "voorbeeld": true, "actief": true,
+    "titel": "Spaar bij elke bestelling",
+    "tekst": "Per bestede euro krijg je een punt. Bij 50 punten wacht een gratis saus.",
+    "knop": { "label": "Bekijk je spaarkaart", "href": "#/sparen" }
+  },
+  {
+    "id": "ijs-actie", "voorbeeld": true, "actief": true,
+    "titel": "Ijsje erbij",
+    "tekst": "Hier komt straks een echte actie van De Zon te staan. Dit is een voorbeeldtekst.",
+    "knop": { "label": "Naar het ijs", "href": "#/menu/ijs" }
+  }
+]

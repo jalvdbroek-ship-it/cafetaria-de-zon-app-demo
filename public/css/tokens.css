@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("../fonts/bricolage.woff2") format("woff2");
+  font-weight: 200 800;
+  font-display: swap;
+}
+
+:root {
+  --paper: oklch(0.974 0.03 88);
+  --paper-2: oklch(0.938 0.059 88);
+  --sun: oklch(0.813 0.167 82);
+  --amber: oklch(0.813 0.165 75);
+  --ink: oklch(0.24 0.032 55);
+  --ink-2: oklch(0.412 0.038 59);
+  --ember: oklch(0.533 0.169 39);
+  --ember-bright: oklch(0.644 0.192 42);
+  --leaf: oklch(0.62 0.12 130);
+  --leaf-deep: oklch(0.42 0.1 140);
+  --night: oklch(0.226 0.008 59);
+  --night-2: oklch(0.274 0.013 62);
+  --night-ink: oklch(0.96 0.03 86);
+  --night-ink-2: oklch(0.81 0.035 80);
+  --line: oklch(0.871 0.063 88);
+  --line-strong: oklch(0.575 0.06 79);
+  --demo: oklch(0.4 0.14 265);
+  --demo-soft: oklch(0.925 0.04 265);
+
+  --font: "Bricolage Grotesque", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --r-s: 0.5rem;
+  --r-m: 0.875rem;
+  --r-l: 1.75rem;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --spring: linear(0, 0.42 12%, 0.86 26%, 1.08 40%, 1.04 52%, 0.99 66%, 1);
+  --bar-h: 4.25rem;
+  --strip-h: 1.9rem;
+  --safe-b: env(safe-area-inset-bottom, 0px);
+  --safe-t: env(safe-area-inset-top, 0px);
+  --gutter: 1.25rem;
+}

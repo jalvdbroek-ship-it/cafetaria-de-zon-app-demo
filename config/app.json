@@ -1,0 +1,15 @@
+{
+  "_uitleg": "Instellingen van de app. Alles onder loyalty is een VOORBEELD, geen regeling van De Zon. demoPin is geen echte beveiliging: het beheerpaneel is een demo.",
+  "demo": true,
+  "demoPin": "1234",
+  "pickup": { "intervalMin": 15, "leadMin": 15, "lastBeforeCloseMin": 15 },
+  "loyalty": {
+    "voorbeeld": true,
+    "pointsPerEuro": 1,
+    "rewards": [
+      { "id": "saus", "naam": "Gratis saus", "punten": 50 },
+      { "id": "frites-klein", "naam": "Gratis frites klein", "punten": 100 },
+      { "id": "hamburger", "naam": "Gratis hamburger", "punten": 200 }
+    ]
+  }
+}

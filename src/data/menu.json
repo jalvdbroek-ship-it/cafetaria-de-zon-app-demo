@@ -1,0 +1,546 @@
+{
+  "_uitleg": "VOORBEELDMENU. Alle producten hebben bevestigd:false (ook de prijzen, in centen). Zet bevestigd op true en vul de echte prijs in zodra de eigenaar het goedkeurt, of pas het aan in het demo-beheerpaneel (#/beheer).",
+  "categorieen": [
+    {
+      "id": "frites",
+      "naam": "Frites",
+      "illustratie": "frites",
+      "foto": "frites"
+    },
+    {
+      "id": "hamburgers",
+      "naam": "Hamburgers",
+      "illustratie": "hamburger",
+      "foto": "hamburgers"
+    },
+    {
+      "id": "snacks",
+      "naam": "Snacks",
+      "illustratie": "snack",
+      "foto": "snacks"
+    },
+    {
+      "id": "vegetarisch",
+      "naam": "Vegetarisch",
+      "illustratie": "blad",
+      "foto": "vegetarisch"
+    },
+    {
+      "id": "ijs",
+      "naam": "IJs",
+      "illustratie": "ijs",
+      "foto": "ijs"
+    },
+    {
+      "id": "dranken",
+      "naam": "Dranken",
+      "illustratie": "beker",
+      "foto": "dranken"
+    },
+    {
+      "id": "sauzen",
+      "naam": "Sauzen",
+      "illustratie": "saus",
+      "foto": "sauzen"
+    }
+  ],
+  "optiegroepen": [
+    {
+      "id": "saus",
+      "naam": "Extra saus",
+      "type": "multi",
+      "verplicht": false,
+      "max": 3,
+      "opties": [
+        {
+          "id": "mayonaise",
+          "naam": "Mayonaise",
+          "prijs": 60
+        },
+        {
+          "id": "ketchup",
+          "naam": "Ketchup",
+          "prijs": 60
+        },
+        {
+          "id": "pindasaus",
+          "naam": "Pindasaus",
+          "prijs": 70
+        },
+        {
+          "id": "currysaus",
+          "naam": "Currysaus",
+          "prijs": 60
+        },
+        {
+          "id": "knoflooksaus",
+          "naam": "Knoflooksaus",
+          "prijs": 70
+        }
+      ]
+    },
+    {
+      "id": "houder",
+      "naam": "Hoorntje of bakje",
+      "type": "single",
+      "verplicht": true,
+      "opties": [
+        {
+          "id": "hoorntje",
+          "naam": "Hoorntje",
+          "prijs": 0
+        },
+        {
+          "id": "bakje",
+          "naam": "Bakje",
+          "prijs": 0
+        }
+      ]
+    },
+    {
+      "id": "weglaten",
+      "naam": "Weglaten",
+      "type": "multi",
+      "verplicht": false,
+      "max": 3,
+      "opties": [
+        {
+          "id": "zonder-sla",
+          "naam": "Zonder sla",
+          "prijs": 0
+        },
+        {
+          "id": "zonder-tomaat",
+          "naam": "Zonder tomaat",
+          "prijs": 0
+        },
+        {
+          "id": "zonder-saus",
+          "naam": "Zonder saus",
+          "prijs": 0
+        }
+      ]
+    },
+    {
+      "id": "smaak",
+      "naam": "Smaak",
+      "type": "single",
+      "verplicht": true,
+      "opties": [
+        {
+          "id": "vanille",
+          "naam": "Vanille",
+          "prijs": 0
+        },
+        {
+          "id": "aardbei",
+          "naam": "Aardbei",
+          "prijs": 0
+        },
+        {
+          "id": "chocolade",
+          "naam": "Chocolade",
+          "prijs": 0
+        }
+      ]
+    }
+  ],
+  "producten": [
+    {
+      "id": "frites-klein",
+      "categorie": "frites",
+      "naam": "Frites klein",
+      "omschrijving": "Een kleine portie met zout",
+      "prijs": 280,
+      "opties": [
+        "saus"
+      ],
+      "uitverkocht": false,
+      "uitgelicht": false,
+      "bevestigd": false
+    },
+    {
+      "id": "frites-middel",
+      "categorie": "frites",
+      "naam": "Frites middel",
+      "omschrijving": "De gewone portie",
+      "prijs": 340,
+      "opties": [
+        "saus"
+      ],
+      "uitverkocht": false,
+      "uitgelicht": true,
+      "bevestigd": false
+    },
+    {
+      "id": "frites-groot",
+      "categorie": "frites",
+      "naam": "Frites groot",
+      "omschrijving": "Voor de echte liefhebber",
+      "prijs": 400,
+      "opties": [
+        "saus"
+      ],
+      "uitverkocht": false,
+      "uitgelicht": false,
+      "bevestigd": false
+    },
+    {
+      "id": "frites-speciaal",
+      "categorie": "frites",
+      "naam": "Frites speciaal",
+      "omschrijving": "Met mayonaise, ketchup en ui",
+      "prijs": 450,
+      "opties": [],
+      "uitverkocht": false,
+      "uitgelicht": true,
+      "bevestigd": false
+    },
+    {
+      "id": "frites-oorlog",
+      "categorie": "frites",
+      "naam": "Frites oorlog",
+      "omschrijving": "Met mayonaise, pindasaus en ui",
+      "prijs": 460,
+      "opties": [],
+      "uitverkocht": false,
+      "uitgelicht": false,
+      "bevestigd": false
+    },
+    {
+      "id": "hamburger",
+      "categorie": "hamburgers",
+      "naam": "Hamburger",
+      "omschrijving": "Met sla, tomaat en saus",
+      "prijs": 420,
+      "opties": [
+        "weglaten",
+        "saus"
+      ],
+      "uitverkocht": false,
+      "uitgelicht": true,
+      "bevestigd": false
+    },
+    {
+      "id": "cheeseburger",
+      "categorie": "hamburgers",
+      "naam": "Cheeseburger",
+      "omschrijving": "Met kaas, sla en saus",
+      "prijs": 470,
+      "opties": [
+        "weglaten",
+        "saus"
+      ],
+      "uitverkocht": false,
+      "uitgelicht": false,
+      "bevestigd": false
+    },
+    {
+      "id": "kipburger",
+      "categorie": "hamburgers",
+      "naam": "Kipburger",
+      "omschrijving": "Kipfilet met sla en saus",
+      "prijs": 490,
+      "opties": [
+        "weglaten",
+        "saus"
+      ],
+      "uitverkocht": false,
+      "uitgelicht": false,
+      "bevestigd": false
+    },
+    {
+      "id": "dubbele-hamburger",
+      "categorie": "hamburgers",
+      "naam": "Dubbele hamburger",
+      "omschrijving": "Twee burgers, kaas en saus",
+      "prijs": 620,
+      "opties": [
+        "weglaten",
+        "saus"
+      ],
+      "uitverkocht": false,
+      "uitgelicht": false,
+      "bevestigd": false
+    },
+    {
+      "id": "frikandel",
+      "categorie": "snacks",
+      "naam": "Frikandel",
+      "omschrijving": "",
+      "prijs": 260,
+      "opties": [
+        "saus"
+      ],
+      "uitverkocht": false,
+      "uitgelicht": true,
+      "bevestigd": false
+    },
+    {
+      "id": "kroket",
+      "categorie": "snacks",
+      "naam": "Kroket",
+      "omschrijving": "",
+      "prijs": 270,
+      "opties": [
+        "saus"
+      ],
+      "uitverkocht": false,
+      "uitgelicht": true,
+      "bevestigd": false
+    },
+    {
+      "id": "bamischijf",
+      "categorie": "snacks",
+      "naam": "Bamischijf",
+      "omschrijving": "",
+      "prijs": 270,
+      "opties": [
+        "saus"
+      ],
+      "uitverkocht": false,
+      "uitgelicht": false,
+      "bevestigd": false
+    },
+    {
+      "id": "gehaktbal",
+      "categorie": "snacks",
+      "naam": "Gehaktbal",
+      "omschrijving": "",
+      "prijs": 300,
+      "opties": [
+        "saus"
+      ],
+      "uitverkocht": false,
+      "uitgelicht": false,
+      "bevestigd": false
+    },
+    {
+      "id": "kipnuggets",
+      "categorie": "snacks",
+      "naam": "Kipnuggets",
+      "omschrijving": "Zes stuks",
+      "prijs": 450,
+      "opties": [
+        "saus"
+      ],
+      "uitverkocht": false,
+      "uitgelicht": false,
+      "bevestigd": false
+    },
+    {
+      "id": "bitterballen",
+      "categorie": "snacks",
+      "naam": "Bitterballen",
+      "omschrijving": "Zes stuks",
+      "prijs": 480,
+      "opties": [
+        "saus"
+      ],
+      "uitverkocht": false,
+      "uitgelicht": false,
+      "bevestigd": false
+    },
+    {
+      "id": "kaassouffle",
+      "categorie": "vegetarisch",
+      "naam": "Kaassoufflé",
+      "omschrijving": "",
+      "prijs": 280,
+      "opties": [
+        "saus"
+      ],
+      "uitverkocht": false,
+      "uitgelicht": false,
+      "bevestigd": false
+    },
+    {
+      "id": "groentekroket",
+      "categorie": "vegetarisch",
+      "naam": "Groentekroket",
+      "omschrijving": "",
+      "prijs": 280,
+      "opties": [
+        "saus"
+      ],
+      "uitverkocht": false,
+      "uitgelicht": false,
+      "bevestigd": false
+    },
+    {
+      "id": "vegaburger",
+      "categorie": "vegetarisch",
+      "naam": "Vegaburger",
+      "omschrijving": "Met sla, tomaat en saus",
+      "prijs": 520,
+      "opties": [
+        "saus"
+      ],
+      "uitverkocht": false,
+      "uitgelicht": false,
+      "bevestigd": false
+    },
+    {
+      "id": "softijs",
+      "categorie": "ijs",
+      "naam": "Softijs",
+      "omschrijving": "In een hoorntje of bakje",
+      "prijs": 250,
+      "opties": [
+        "houder"
+      ],
+      "uitverkocht": false,
+      "uitgelicht": true,
+      "bevestigd": false
+    },
+    {
+      "id": "bolletje-ijs",
+      "categorie": "ijs",
+      "naam": "Bolletje ijs",
+      "omschrijving": "Per bolletje",
+      "prijs": 150,
+      "opties": [
+        "houder"
+      ],
+      "uitverkocht": false,
+      "uitgelicht": false,
+      "bevestigd": false
+    },
+    {
+      "id": "kinderijsje",
+      "categorie": "ijs",
+      "naam": "Kinderijsje",
+      "omschrijving": "Klein softijsje",
+      "prijs": 180,
+      "opties": [
+        "houder"
+      ],
+      "uitverkocht": false,
+      "uitgelicht": false,
+      "bevestigd": false
+    },
+    {
+      "id": "ijscoupe",
+      "categorie": "ijs",
+      "naam": "Ijscoupe",
+      "omschrijving": "Met slagroom",
+      "prijs": 450,
+      "opties": [],
+      "uitverkocht": false,
+      "uitgelicht": false,
+      "bevestigd": false
+    },
+    {
+      "id": "frisdrank",
+      "categorie": "dranken",
+      "naam": "Frisdrank",
+      "omschrijving": "Blikje",
+      "prijs": 220,
+      "opties": [],
+      "uitverkocht": false,
+      "uitgelicht": false,
+      "bevestigd": false
+    },
+    {
+      "id": "water",
+      "categorie": "dranken",
+      "naam": "Water",
+      "omschrijving": "",
+      "prijs": 180,
+      "opties": [],
+      "uitverkocht": false,
+      "uitgelicht": false,
+      "bevestigd": false
+    },
+    {
+      "id": "koffie",
+      "categorie": "dranken",
+      "naam": "Koffie",
+      "omschrijving": "",
+      "prijs": 220,
+      "opties": [],
+      "uitverkocht": false,
+      "uitgelicht": false,
+      "bevestigd": false
+    },
+    {
+      "id": "chocolademelk",
+      "categorie": "dranken",
+      "naam": "Chocolademelk",
+      "omschrijving": "",
+      "prijs": 250,
+      "opties": [],
+      "uitverkocht": false,
+      "uitgelicht": false,
+      "bevestigd": false
+    },
+    {
+      "id": "milkshake",
+      "categorie": "dranken",
+      "naam": "Milkshake",
+      "omschrijving": "",
+      "prijs": 380,
+      "opties": [
+        "smaak"
+      ],
+      "uitverkocht": false,
+      "uitgelicht": false,
+      "bevestigd": false
+    },
+    {
+      "id": "mayonaise",
+      "categorie": "sauzen",
+      "naam": "Mayonaise",
+      "omschrijving": "",
+      "prijs": 60,
+      "opties": [],
+      "uitverkocht": false,
+      "uitgelicht": false,
+      "bevestigd": false
+    },
+    {
+      "id": "ketchup",
+      "categorie": "sauzen",
+      "naam": "Ketchup",
+      "omschrijving": "",
+      "prijs": 60,
+      "opties": [],
+      "uitverkocht": false,
+      "uitgelicht": false,
+      "bevestigd": false
+    },
+    {
+      "id": "pindasaus",
+      "categorie": "sauzen",
+      "naam": "Pindasaus",
+      "omschrijving": "",
+      "prijs": 70,
+      "opties": [],
+      "uitverkocht": false,
+      "uitgelicht": false,
+      "bevestigd": false
+    },
+    {
+      "id": "currysaus",
+      "categorie": "sauzen",
+      "naam": "Currysaus",
+      "omschrijving": "",
+      "prijs": 60,
+      "opties": [],
+      "uitverkocht": false,
+      "uitgelicht": false,
+      "bevestigd": false
+    },
+    {
+      "id": "knoflooksaus",
+      "categorie": "sauzen",
+      "naam": "Knoflooksaus",
+      "omschrijving": "",
+      "prijs": 70,
+      "opties": [],
+      "uitverkocht": false,
+      "uitgelicht": false,
+      "bevestigd": false
+    }
+  ]
+}
