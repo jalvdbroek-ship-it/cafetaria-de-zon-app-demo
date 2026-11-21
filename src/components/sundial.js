@@ -1,5 +1,6 @@
 import { html } from "../lib/dom.js";
 import { openStatus, sunFraction, formatMinutes, dayName } from "../lib/hours.mjs";
+import { cast } from "./cast-ui.js";
 
 const CX = 200, CY = 200, R = 170;
 const pos = (f) => [CX - R * Math.cos(Math.PI * f), CY - R * Math.sin(Math.PI * f)];
@@ -13,7 +14,7 @@ export function statusText(now, hours) {
   return { open: false, title: "Nu gesloten", sub: `Open ${when} om ${formatMinutes(s.next.minutes)}` };
 }
 
-export function sundial(now, hours) {
+export function sundial(now, hours, { intro = true } = {}) {
   const t = statusText(now, hours);
   const f = sunFraction(now, hours);
   const s = openStatus(now, hours);
@@ -28,9 +29,16 @@ export function sundial(now, hours) {
         <line class="dial-horizon" x1="10" y1="200" x2="390" y2="200"/>
         <g clip-path="url(#sky)">
           <g class="sun" data-f="${f ?? ""}" transform="translate(${x.toFixed(1)} ${y.toFixed(1)})">
-            <g class="rays"><circle r="26" class="sun-disc"/><g class="sun-rays"><path d="M0-40v-10M0 40v10M-40 0h-10M40 0h10M-28-28l-7-7M28 28l7 7M-28 28l-7 7M28-28l7-7"/></g></g>
+            <g class="sun-wob">${cast("zon-cool", -52, -54, 104, 112)}</g>
           </g>
         </g>
+        <g clip-path="url(#sky)" class="dial-cast ${intro ? "intro" : ""}">
+          <g class="cs" style="--i:0"><g class="hop" style="--d:0s;--t:2.7s">${cast("frietje-happy", 52, 121, 80, 86)}</g></g>
+          <g class="cs" style="--i:1"><g class="hop" style="--d:0.5s;--t:3.1s">${cast("burg-cool", 126, 111, 90, 97)}</g></g>
+          <g class="cs" style="--i:2"><g class="hop" style="--d:1.1s;--t:2.9s">${cast("snack-wink", 218, 121, 80, 86)}</g></g>
+          <g class="cs" style="--i:3"><g class="hop" style="--d:1.7s;--t:3.3s">${cast("ijsje-happy", 292, 124, 76, 82)}</g></g>
+        </g>
+        <g clip-path="url(#sky)" class="cs-sleep">${cast("zon-sleep", 148, 124, 104, 112)}</g>
       </svg>
       <div class="dial-text">
         <p class="dial-title" aria-live="polite">${t.title}</p>

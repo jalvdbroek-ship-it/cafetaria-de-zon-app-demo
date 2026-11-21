@@ -1,5 +1,5 @@
 // Offline-cache: schil en data worden vooraf opgehaald; daarna stale-while-revalidate voor same-origin GET.
-const VERSION = "dezon-app-v1";
+const VERSION = "dezon-app-v2";
 const CORE = [
   "./",
   "index.html",
@@ -13,6 +13,8 @@ const CORE = [
   "public/css/screens.css",
   "public/css/tokens.css",
   "src/app.js",
+  "src/components/cast-ui.js",
+  "src/components/cast.js",
   "src/components/confirm.js",
   "src/components/demo-code.js",
   "src/components/icons.js",

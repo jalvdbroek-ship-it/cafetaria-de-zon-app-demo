@@ -59,7 +59,7 @@ export default {
   mount(root, app) {
     const { site } = app.data;
     animateSun(root, app.now(), site.hours, reducedMotion());
-    const t = setInterval(() => { root.querySelector("#dial").innerHTML = sundial(app.now(), site.hours).s; }, 30000);
+    const t = setInterval(() => { root.querySelector("#dial").innerHTML = sundial(app.now(), site.hours, { intro: false }).s; }, 30000);
     const un = bindProducts(root, app);
     return () => { clearInterval(t); un(); };
   },

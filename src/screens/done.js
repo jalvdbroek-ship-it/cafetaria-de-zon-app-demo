@@ -1,5 +1,6 @@
 import { html } from "../lib/dom.js";
 import { icon } from "../components/icons.js";
+import { figuur } from "../components/cast-ui.js";
 import { demoBanner, orderLines, formatPickup } from "../components/order.js";
 
 export default {
@@ -10,7 +11,8 @@ export default {
     if (!order) return html`<h1>Bestelling niet gevonden</h1><div class="state"><p class="muted">Deze demo-bestelling staat niet meer op dit toestel.</p><a class="btn" href="#/menu">Naar het menu</a></div>`;
     return html`
       ${demoBanner("Dit is een demo. De Zon heeft deze bestelling niet ontvangen en er is niets betaald.")}
-      <section class="card sun stack center">
+      <section class="card sun stack center done-card">
+        ${figuur("zon-happy", "done-fig")}
         <p class="eyebrow">Demo-bestelnummer</p>
         <h1 class="order-id num">${order.id}</h1>
         <p>Afhalen: <strong>${formatPickup(order)}</strong></p>

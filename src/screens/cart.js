@@ -2,6 +2,7 @@ import { html, $ } from "../lib/dom.js";
 import { confirmSheet } from "../components/confirm.js";
 import { formatEuro } from "../lib/money.mjs";
 import { icon, illustration } from "../components/icons.js";
+import { figuur } from "../components/cast-ui.js";
 import { demoBanner } from "../components/order.js";
 
 export default {
@@ -10,7 +11,7 @@ export default {
     const priced = app.priced();
     if (!priced.lines.length) {
       return html`<h1>Mandje</h1>
-        <div class="state"><span class="ill-wrap">${illustration("frites")}</span><h2>Je mandje is leeg</h2><p class="muted">Kies iets lekkers van de menukaart.</p><a class="btn" href="#/menu">Naar het menu</a></div>`;
+        <div class="state"><span class="ill-wrap">${figuur("frietje-sad", "state-fig")}</span><h2>Je mandje is leeg</h2><p class="muted">Kies iets lekkers van de menukaart.</p><a class="btn" href="#/menu">Naar het menu</a></div>`;
     }
     const blocked = priced.unavailable.length > 0;
     return html`
